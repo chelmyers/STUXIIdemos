@@ -3,6 +3,6 @@
 Weekly Examples for ST:UX Design II Course
 Intended for students
 
-[See examples.](https://github.com/chelmyers/STUXIIdemos)
+[See examples.](http://chelmyers.github.io/STUXIIdemos/)
 
 Contact chelsea.m.myers@drexel.edu with questions.

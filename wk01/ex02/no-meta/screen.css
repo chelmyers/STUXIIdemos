@@ -1,0 +1,107 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  max-width: 73em;
+  margin: 0 auto;
+  font-size: 0.85em;
+  padding: 0 8px;
+}
+
+
+/*TYPOGRAPHY*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+p, ol, ul {
+  line-height: 1.5;
+  font-size: 1em;
+  color: #333;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #FF3D5A;
+}
+
+
+/*RESUME STYLES*/
+article.event {
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+  article.event:nth-child(3n+1) {
+    border-left: 5px solid #FF3D5A;
+  }
+
+  article.event:nth-child(3n+2) {
+    border-left: 5px solid yellowgreen;
+  }
+
+  article.event:nth-child(3n+3) {
+    border-left: 5px solid #4FAAE2;
+  }
+
+  article.event ul {
+    padding:0;
+  }
+
+    article.event ul li {
+      list-style: none;
+    }
+
+    article.event ul li:before {
+      content: "\276f ";
+      margin-right: 7px;
+
+    }
+
+
+.job-date {
+  font-size: 0.75em;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: italic;
+  float: right;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.column p {
+  margin: 7px 0;
+}
+
+
+
+/*At 600px*/
+@media screen and (min-width: 600px){
+
+  body {
+    font-size: 1em;
+  }
+
+  .resume__contact {
+    min-width: 100%;
+  }
+
+  .resume__main {
+    float: left;
+    width: 70%;
+    padding-right: 60px;
+  }
+
+  .resume__secondary {
+    float: right;
+    width: 30%;
+  }
+
+}
