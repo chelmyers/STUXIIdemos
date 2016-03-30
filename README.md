@@ -1,4 +1,4 @@
-# ST_UXII_demos
+# ST UXII Demos
 
 Weekly Examples for ST:UX Design II Course
 Intended for students
