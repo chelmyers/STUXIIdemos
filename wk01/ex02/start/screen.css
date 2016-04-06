@@ -83,7 +83,7 @@ article.event {
 
 
 /*At 600px*/
-/*@media screen and (min-width: 600px){
+@media screen and (min-width: 600px){
 
   body {
     font-size: 1em;
@@ -104,4 +104,4 @@ article.event {
     width: 30%;
   }
 
-}*/
+}

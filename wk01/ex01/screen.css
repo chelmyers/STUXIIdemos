@@ -6,4 +6,8 @@ body {
   body {
     background-color: yellowgreen;
   }
+
+  h1 {
+    text-decoration: underline;
+  }
 }
