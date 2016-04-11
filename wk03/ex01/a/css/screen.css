@@ -1,12 +1,33 @@
 .color-swatch {
   display: inline-block;
-  width: 200px;
-  height: 200px; }
+  width: 100px;
+  height: 100px;
+  border: 1px solid black; }
 
 .primary-color {
   background-color: #e9400a; }
 
 .secondary-color {
   background-color: #5fbcc1; }
+
+p {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px; }
+
+.spacing-top {
+  margin-top: 14px; }
+
+/*
+Part One:
+Write the following styles. Use Nesting!
+- Remove all padding and margin from <ul>s
+- Make <li> display inline-block
+- Change the color of the <a>s
+- Change the hover of the <a>s
+*/
+/*
+Part Two:
+Write a nested media query (using a variable for the max or min size) changing the color of the links
+*/
 
 /*# sourceMappingURL=screen.css.map */
