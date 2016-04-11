@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,aAAc;EACZ,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;;AAGf,cAAe;EACb,gBAAgB,ECRI,OAAO;;ADW7B,gBAAiB;EACf,gBAAgB,ECXI,OAAO",
+"sources": ["../sass/general/_demo-styles.scss","../sass/general/_variables.scss"],
+"names": [],
+"file": "screen.css"
+}

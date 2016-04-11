@@ -1,0 +1,12 @@
+.color-swatch {
+  display: inline-block;
+  width: 200px;
+  height: 200px; }
+
+.primary-color {
+  background-color: #e9400a; }
+
+.secondary-color {
+  background-color: #5fbcc1; }
+
+/*# sourceMappingURL=screen.css.map */
