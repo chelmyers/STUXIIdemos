@@ -1,27 +1,27 @@
 // Your app's JS goes here
 
 //Wait until HTML is loaded
-window.onload = function() {
+$(document).ready(function(){
 
-	var nameSpace = document.getElementsByClassName("user-name")[0];
-	var nameInput = document.getElementsByClassName("user-name-input")[0];
-	var nameSave  = document.getElementsByClassName("user-name-save")[0];
+	var nameSpace = $(".user-name");
+	var nameInput = $(".user-name-input");
+	var nameSave  = $(".user-name-save");
 
-	// var element = document.getElementById(id);
+	// var element = $("#id");
 
-	nameSave.onclick = function(event) {
+	nameSave.click(function(event) {
 		event.preventDefault();
 
-		//localStorage.setItem("user-name", nameInput.value);
+		localStorage.setItem("user-name", nameInput.val());
 
-		nameSpace.innerHTML = nameInput.value;
-	}
+		nameSpace.html(nameInput.val());
+	});
 
 	if(localStorage.length > 0){
-		//nameSpace.innerHTML = localStorage.getItem("user-name");
+		nameSpace.html(localStorage.getItem("user-name"));
 	}
 
 	//// Clear localStorage
 	//localStorage.clear();
 
-};
+});
