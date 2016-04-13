@@ -2,3 +2,22 @@
 
 //Write a mixin for adding a box shadow of any color
 //https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $color) {
+  box-shadow: $x $y $color;
+}
+
+
+@mixin serif(){
+  font-family: $heading-type;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+}

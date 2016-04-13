@@ -4,7 +4,9 @@
   display: inline-block;
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border: 2px solid black;
+  @include border-radius(10px);
+  @include box-shadow(3px, 10px, #ee00bb);
 }
 
 .primary-color {
@@ -15,12 +17,19 @@
   background-color: $secondary-color;
 }
 
+.tertiary-color {
+  background-color: $tertiary-color;
+}
+
 //Type
 p {
   font-family: $body-type;
   font-size: 14px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @include serif();
+}
 
 //Spacing
 .spacing-top {
@@ -37,7 +46,28 @@ Write the following styles. Use Nesting!
 - Change the color of the <a>s
 - Change the hover of the <a>s
 */
+ul {
+  padding: 0;
+  margin:0;
 
+   li {
+     display: inline-block;
+     @extend p;
+
+      a {
+        color: $primary-color;
+
+        @media screen and (min-width: $q-medium){
+          color: $tertiary-color;
+        }
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+
+   }
+}
 
 /*
 Part Two:
