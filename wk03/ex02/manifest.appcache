@@ -4,14 +4,10 @@ CACHE MANIFEST
 CACHE:
 
 # CSS
-a/css/main.css
+a/css/screen.css
 
 # IMAGES
-a/img/icon-57x57.png
-a/img/icon-114x114.png
-a/img/startup-320x460.png
-a/img/startup-640x920.png
-a/img/startup-640x1096.png
+
 
 # HTML FILES
 index.html
