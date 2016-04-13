@@ -3,18 +3,27 @@
 //Wait until HTML is loaded
 window.onload = function() {
 
-	var nameSpace = document.getElementsByClassName("user-name")[0];
-	var nameInput = document.getElementsByClassName("user-name-input")[0];
-	var nameSave  = document.getElementsByClassName("user-name-save")[0];
+	var menuItems = document.getElementsByClassName("menu-item");
+	var totalCell = document.getElementsByClassName("total")[0];
 
-	// var element = document.getElementById(id);
+	// cart
+	// -item
+	// --name
+	// --price
+	// --quanitity
 
-	nameSave.onclick = function(event) {
-		event.preventDefault();
+
+	menuItems.onclick = function(event) {
+		var itemName = this.dataset.menuItem;
+		var itemPrice = this.dataset.menuPrice;
+
+		console.log(itemName + itemPrice);
+
+		//var cartArray = [this.dataset.menuItem, this.dataset.menuItem;
 
 		//localStorage.setItem("user-name", nameInput.value);
 
-		nameSpace.innerHTML = nameInput.value;
+
 	}
 
 	if(localStorage.length > 0){

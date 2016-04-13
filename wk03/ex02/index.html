@@ -50,12 +50,22 @@
 
 <body>
 
-	<h1>Hello <span class="user-name"></span></h1>
+	<h1>Menu</h1>
 
-	<form>
-		<input class="user-name-input" type="text" placeholder="What is your name?">
-		<input class="user-name-save" type="submit" value="Save Name">
-	</form>
+	<ul>
+		<li class="menu-item" data-menu-item="Pizza" data-menu-price="10.00">Pizza <span>10.00</span></li>
+		<li class="menu-item" data-menu-item="Wings" data-menu-price="8.00">Wings <span>8.00</span></li>
+		<li class="menu-item" data-menu-item="Burrito" data-menu-price="6.00">Burrito <span>6.00</span></li>
+	</ul>
+
+	<h1>Cart</h1>
+	<table>
+		<tr>
+			<td>Total</td>
+			<td></td>
+			<td class="total"></td>
+		</tr>
+	</table>
 
 
 
