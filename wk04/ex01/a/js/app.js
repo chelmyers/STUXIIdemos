@@ -17,9 +17,9 @@ window.onload = function() {
 		nameSpace.innerHTML = nameInput.value;
 	}
 
-	if(localStorage.length > 0){
+	//if(localStorage.length > 0){
 		//nameSpace.innerHTML = localStorage.getItem("user-name");
-	}
+	//}
 
 	//// Clear localStorage
 	//localStorage.clear();
