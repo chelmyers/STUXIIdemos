@@ -8,6 +8,7 @@ window.onload = function() {
 	var nameSave  = document.querySelector(".user-name-save");
 
 	//var element = document.querySelector("#id");
+	//var elements = document.querySelectorAll(".selectors");
 
 	//other version of selection
 	//var nameSave  = document.getElementsByClassName("user-name-save")[0];
