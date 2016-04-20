@@ -3,8 +3,8 @@
 //Wait until HTML is loaded
 $(document).ready(function(){
 	var menuItems = $(".menu-item");
-	var totalCell = $(".total");
 	var LSCart;
+	totalRow = $('.total-row').html();
 
 	// cart array structure
 	// -item
@@ -18,8 +18,6 @@ $(document).ready(function(){
 		var itemPrice = $(this).data('menu-price');
 		var itemQuantity = 1;
 		LSCart = [];
-
-		$('.cart').html('<tr><td>Total</td><td></td><td class="total"></td></tr>');
 
 		if(localStorage.getItem("cart")){
 			LSCart = JSON.parse(localStorage.getItem("cart"));
@@ -38,32 +36,32 @@ $(document).ready(function(){
 
 		localStorage.setItem("cart", JSON.stringify(LSCart));
 
-		populateCart(LSCart, totalCell);
+		populateCart(LSCart);
 
 	});
 
 	if(localStorage.getItem("cart")){
 		LSCart = JSON.parse(localStorage.getItem("cart"));
-		populateCart(LSCart, totalCell);
+		populateCart(LSCart);
 	}
-
-
-
 });
 
-function populateCart(array, total){
 
+function populateCart(array){
 	var totalCost = 0;
 
+	$('.cart tbody').html(totalRow);
+
 	for(var i = 0; i < array.length; i++){
-		$('.cart').prepend("<tr><td>" + array[i][0]
+		$('.cart tbody').prepend("<tr><td>" + array[i][0]
 											+ "</td><td>" + array[i][2]
 											+ "</td><td>" + (array[i][2]* array[i][1])
 											+ "</td></tr>");
 
 		totalCost += (array[i][2] * array[i][1]);
-	  total.html(totalCost);
 	}
+
+	$(".total").html(totalCost);
 }
 
 
