@@ -1,0 +1,45 @@
+body {
+  font-family: $body-font;
+  color: $black;
+}
+
+
+.menu-item {
+  list-style: none;
+  background: $blue;
+  color: white;
+  display: inline-block;
+  padding: $b;
+  margin: $b;
+
+  span {
+    font-style: italic;
+    font-size: 0.75em;
+
+    &:before {
+      content: "$";
+    }
+  }
+}
+
+
+.cart {
+  border-collapse: collapse;
+
+  td {
+    padding: $b;
+  }
+
+  tr {
+    border-bottom: 1px solid $black;
+  }
+
+  .total-row {
+    background-color: $blue;
+    color: white;
+  }
+
+  .total:before {
+    content: "$";
+  }
+}

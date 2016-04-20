@@ -4,7 +4,7 @@
 $(document).ready(function(){
 	var menuItems = $(".menu-item");
 	var LSCart;
-	totalRow = $('.total-row').html();
+	totalRow = $('.total-row');
 
 	// cart array structure
 	// -item
