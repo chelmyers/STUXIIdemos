@@ -3,10 +3,14 @@
 //Wait until HTML is loaded
 window.onload = function() {
 
-	var nameSpace = document.getElementsByClassName("user-name")[0];
-	var nameInput = document.getElementsByClassName("user-name-input")[0];
-	var nameSave  = document.getElementsByClassName("user-name-save")[0];
+	var nameSpace = document.querySelector(".user-name");
+	var nameInput = document.querySelector(".user-name-input");
+	var nameSave  = document.querySelector(".user-name-save");
 
+	//var element = document.querySelector("#id");
+
+	//other version of selection
+	//var nameSave  = document.getElementsByClassName("user-name-save")[0];
 	// var element = document.getElementById(id);
 
 	nameSave.onclick = function(event) {
@@ -17,9 +21,9 @@ window.onload = function() {
 		nameSpace.innerHTML = nameInput.value;
 	}
 
-	//if(localStorage.length > 0){
-		//nameSpace.innerHTML = localStorage.getItem("user-name");
-	//}
+	// if(localStorage.length > 0){
+	// 	nameSpace.innerHTML = localStorage.getItem("user-name");
+	// }
 
 	//// Clear localStorage
 	//localStorage.clear();
