@@ -21,11 +21,12 @@ function success(position) {
   // $('.location').html(c.latitude + " latitude and " + c.longitude + " longitude");
   console.log("Location displayed");
 
-  $.getJSON("http:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude,function(json){
-      console.log(JSON.stringify(json));
-      console.log("weather displayed");
-  });
-
+  $.getJSON(
+      "http:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude,
+      function(json){
+        console.log(JSON.stringify(json));
+        console.log("weather displayed");
+      });
 }
 
 function error() {
