@@ -1,9 +1,6 @@
 // HTML5 Geolocation
 //https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 
-//openweathermap
-//http://openweathermap.org/current#geo
-
 $(document).ready(function(){
   if ("geolocation" in navigator) {
     console.log("Geolocation is available");
@@ -19,10 +16,6 @@ function success(position) {
   var t = position.timestamp;
   $('.location').html(c.latitude + " latitude and " + c.longitude + " longitude");
   console.log("Location displayed");
-
-  $.getJSON("http:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude,function(json){
-      document.write(JSON.stringify(json));
-  });
 }
 
 function error() {
