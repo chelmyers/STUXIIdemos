@@ -22,7 +22,7 @@ function success(position) {
   var t = position.timestamp;
   console.log("Location successfully retrieved");
 
-  var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&APPID=dfc12af78c0d3f30f389d0cc934567db";
+  var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&APPID=dfc12af78c0d3f30f389d0cc934567db";
 
   //Pretty Print JSON
   //http://jsonprettyprint.com/json-pretty-printer.php
