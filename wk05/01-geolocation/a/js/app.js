@@ -21,7 +21,7 @@ function success(position) {
   console.log("Location displayed");
 
   $.getJSON("http:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude,function(json){
-      document.write(JSON.stringify(json));
+      console.log(JSON.stringify(json));
   });
 }
 
