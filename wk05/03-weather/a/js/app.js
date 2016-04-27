@@ -20,24 +20,20 @@ $(document).ready(function(){
 function success(position) {
   var c = position.coords;
   var t = position.timestamp;
-  // $('.location').html(c.latitude + " latitude and " + c.longitude + " longitude");
-  console.log("success");
+  console.log("Location successfully retrieved");
 
-  var url = "https:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&callback=?";
+  var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&APPID=dfc12af78c0d3f30f389d0cc934567db";
 
-  $.ajax({
-       type: "POST",
-       dataType: "jsonp",
-       url: url,
-       async: false,
-       success: function (data) {
-           var temp = data.list[0].main.temp;
-           console.log(temp);
-       },
-       error: function (errorData) {
-           alert("Error while getting weather: " + errorData.status);
-       }
-   });
+  //Pretty Print JSON
+  //http://jsonprettyprint.com/json-pretty-printer.php
+
+  $.getJSON(url,function(data){
+          console.log(JSON.stringify(data));
+          console.log(data.weather[0].description);
+          console.log(data.name);
+          $('.weather').html(data.weather[0].description);
+          $('.city').html(data.name);
+  });
 }
 
 function error() {
