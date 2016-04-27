@@ -9,9 +9,9 @@ $(document).ready(function(){
 
   myShakeEvent.start();
 
-  window.addEventListener('shake', shakeEventDidOccur, false);
+  window.addEventListener('shake', shakeOccurred, false);
 
-  function shake() {
+  function shakeOccurred() {
       alert('You shook your phone!');
   }
 
