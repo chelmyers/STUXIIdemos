@@ -2,16 +2,17 @@
 
 $(document).ready(function(){
 
-  if (window.DeviceOrientationEvent) {
-    window.addEventListener('devicemotion', function(event) {
-      $('.acX').html(event.acceleration.x);
-      $('.acY').html(event.acceleration.y);
+  var myShakeEvent = new Shake({
+      threshold: 10 //strength
+      //another option in timeout for frequency of event
+  });
 
-      $('.alpha').html(event.rotationRate.alpha);
-      $('.beta').html(event.rotationRate.beta);
+  myShakeEvent.start();
 
+  window.addEventListener('shake', shakeEventDidOccur, false);
 
-    });
+  function shake() {
+      alert('You shook your phone!');
   }
 
 });
