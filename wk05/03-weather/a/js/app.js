@@ -23,7 +23,7 @@ function success(position) {
   // $('.location').html(c.latitude + " latitude and " + c.longitude + " longitude");
   console.log("success");
 
-  var url = "http:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&callback=?";
+  var url = "https:api.openweathermap.org/data/2.5/weather?lat=" + c.latitude + "&lon=" + c.longitude + "&callback=?";
 
   $.ajax({
        type: "POST",
