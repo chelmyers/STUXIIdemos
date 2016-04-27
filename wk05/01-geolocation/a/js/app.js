@@ -18,8 +18,10 @@ $(document).ready(function(){
 });
 
 
-function success(lat, long) {
-  $('.location').html(lat + " latitude and " + long + "longitude");
+function success(position) {
+  var c = position.coords;
+
+  $('.location').html(c.latitude + " latitude and " + c.longitude + "longitude");
   console.log("Location displayed");
 }
 
