@@ -3,6 +3,7 @@
 
 //openweathermap
 //http://openweathermap.org/current#geo
+console.log(1);
 
 $(document).ready(function(){
   if ("geolocation" in navigator) {
