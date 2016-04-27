@@ -6,7 +6,7 @@
 
 
 $(document).ready(function(){
-  console.log(1);
+  console.log(2);
 
   if ("geolocation" in navigator) {
     console.log("Geolocation is available");
