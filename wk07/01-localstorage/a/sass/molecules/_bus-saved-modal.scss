@@ -1,0 +1,15 @@
+.bus-saved-modal {
+  display: none;
+  background-color: white;
+  padding: $b;
+
+  position: absolute;
+  top:$b;
+  bottom:$b;
+  left: $b;
+  right: $b;
+
+  label {
+    display: block;
+  }
+}

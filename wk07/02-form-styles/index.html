@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<title>Web App</title>
+
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="a/css/screen.css">
+
+
+</head>
+
+<body>
+
+	<h1>PhilaBus</h1>
+
+	<div class="select-styled">
+		<select name="bus-saved-list" id="bus-saved-list">
+			<option>Select a bus</option>
+		</select>
+	</div>
+
+	<button class="bus-saved-modal-open">Edit Bus List</button>
+
+
+
+	<div class="bus-saved-modal">
+		<form>
+			<h2>Save Freguent Buses</h2>
+
+
+			<input id="bus-4" type="checkbox" name="bus-saved-check" value="4">
+			<label for="bus-4">4</label>
+
+
+			<input id="bus-7" type="checkbox" name="bus-saved-check" value="7">
+			<label for="bus-7">7</label>
+
+
+			<input id="bus-21" type="checkbox" name="bus-saved-check" value="21">
+			<label for="bus-21">21</label>
+
+
+			<input id="bus-31" type="checkbox" name="bus-saved-check" value="31">
+			<label for="bus-31">31</label>
+
+
+			<input id="bus-57" type="checkbox" name="bus-saved-check" value="57">
+			<label  for="bus-57">57</label>
+
+		</form>
+		<button class="bus-saved-modal-close bus-saved-updated">Save Buses</button>
+	</div>
+
+
+
+
+	<!-- JAVASCRIPT-->
+	<script src="a/js/lib/jquery-2.2.3.min.js"></script>
+
+	<script src="a/js/modal.js"></script>
+	<script src="a/js/saveBus.js"></script>
+	<script src="a/js/app.js"></script>
+
+
+</body>
+
+</html>
