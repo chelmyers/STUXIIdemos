@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>week 05</title>
 
   <style>
 
     .modal-shake {
       display: none;
+      position: absolute;
+      top:15px;
+      bottom:15px;
+      left:15px;
+      right:15px;
+      border: 1px solid rgb(104, 110, 107);
     }
+
+    .modal-shake-close {
+      float: right;
+    }
+
   </style>
 </head>
 <body>
 
-  <h1>Shake your phone. v02</h1>
+  <h1>Shake your phone. v04</h1>
 
   <div class="modal-shake">
+    <p class="modal-shake-close">&times;</p>
+    <img src="http://placehold.it/300?text=Scan" alt="">
     <h1>Scan for points!</h1>
+
   </div>
 
 
