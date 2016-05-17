@@ -13,5 +13,5 @@ window.addEventListener('shake', shakeEventDidOccur, false);
 function shakeEventDidOccur () {
 
     //put your own code here etc.
-    alert('shake!');
+    $('.modal-shake').toggle();
 }
