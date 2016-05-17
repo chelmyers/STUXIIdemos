@@ -1,0 +1,74 @@
+.bus-saved-modal {
+  display: none;
+  background-color: white;
+  padding: $b;
+
+  position: absolute;
+  top:$b;
+  bottom:$b;
+  left: $b;
+  right: $b;
+
+  label {
+    display: block;
+    margin-bottom: $b;
+    border: 1px solid $gray-lt;
+    padding: $b/2;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url("../imgs/icon-bus-gray.png") no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      margin-right: $b;
+      vertical-align: middle;
+
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+      background: url("../imgs/icon-bus-green.png") no-repeat;
+      background-size: cover;
+  }
+}
+
+
+//Select Styles
+.select-styled {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid $black;
+  height: 30px;
+  border-radius: 3px;
+
+  background-color: white;
+  background-image: url('../imgs/icon-triangle.png');
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: 95% 50%;
+
+  select {
+    width: 320px;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    font-family: $body-font;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    background-image: url('../imgs/icon-triangle-blue.png');
+  }
+}

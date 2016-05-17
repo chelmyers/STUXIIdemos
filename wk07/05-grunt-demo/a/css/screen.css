@@ -1,0 +1,60 @@
+body {
+  background-color: #dbdbdb;
+  color: #222222;
+  font-family: Verdana, Arial, sans-serif; }
+
+.bus-saved-modal {
+  display: none;
+  background-color: white;
+  padding: 16px;
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 16px;
+  right: 16px; }
+  .bus-saved-modal label {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    cursor: pointer; }
+    .bus-saved-modal label:before {
+      content: "";
+      display: inline-block;
+      background: url("../imgs/icon-bus-gray.png") no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+      vertical-align: middle; }
+  .bus-saved-modal input[type="checkbox"] {
+    display: none; }
+  .bus-saved-modal input[type="checkbox"]:checked + label:before {
+    background: url("../imgs/icon-bus-green.png") no-repeat;
+    background-size: cover; }
+
+.select-styled {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #222222;
+  height: 30px;
+  border-radius: 3px;
+  background-color: white;
+  background-image: url("../imgs/icon-triangle.png");
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: 95% 50%; }
+  .select-styled select {
+    width: 320px;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px; }
+    .select-styled select:focus {
+      outline: none; }
+  .select-styled:hover {
+    background-image: url("../imgs/icon-triangle-blue.png"); }
